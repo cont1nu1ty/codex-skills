@@ -1,0 +1,4 @@
+interface:
+  display_name: "文章与 HN 批判性阅读"
+  short_description: "展开作者逻辑，整理 HN 分歧与热门讨论，综合证据形成有边界的结论"
+  default_prompt: "使用 $critical-blog-reader 阅读这篇文章及对应的 Hacker News 讨论，展开作者逻辑、呈现有价值的分歧，并综合判断。"

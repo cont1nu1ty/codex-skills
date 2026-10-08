@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-skills",
+  "version": "1.0.0",
+  "description": "A personal collection of reusable Codex skills, starting with critical article and Hacker News reading.",
+  "repository": "https://github.com/cont1nu1ty/codex-skills",
+  "keywords": [
+    "reading",
+    "research",
+    "hacker-news",
+    "critical-thinking"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Codex Skills",
+        "shortDescription": "Reusable personal Codex skills",
+        "longDescription": "A personal collection of reusable Codex skills. Currently includes critical-blog-reader: reconstruct article reasoning, compare substantive Hacker News discussions, and synthesize conclusions with evidence and scope limits. Defaults to moderately detailed Chinese prose and adapts to the user’s language. Requires the host’s web search and reading tools; provides no separate MCP service.",
+        "category": "Productivity",
+        "capabilities": [
+          "Article reasoning analysis",
+          "Hacker News discussion synthesis",
+          "Evidence assessment"
+        ],
+        "defaultPrompt": [
+          "Analyze this article and its Hacker News discussion.",
+          "Explain the author’s logic and compare the strongest objections."
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "developerName": "continuity"
+      },
+      "publication": {
+        "release_notes": "Initial collection release with critical-blog-reader: article reasoning, Hacker News discussion analysis, and evidence-bounded synthesis."
+      }
+    }
+  },
+  "author": {
+    "name": "continuity"
+  }
+}
